@@ -1,0 +1,29 @@
+{
+  "name": "classflowai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered interactive teaching platform",
+  "scripts": {
+    "dev": "pnpm dev:web & pnpm dev:server",
+    "dev:web": "pnpm --filter @classflowai/web dev",
+    "dev:server": "pnpm --filter @classflowai/server dev",
+    "build": "pnpm -r build",
+    "build:web": "pnpm --filter @classflowai/web build",
+    "build:server": "pnpm --filter @classflowai/server build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.4"
+}
